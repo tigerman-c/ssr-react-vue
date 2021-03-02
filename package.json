@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev:ssr-react": "webpack --config webpack.config.js  && cd ./dist && node bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "react-dom": "^17.0.1"
+  }
+}
