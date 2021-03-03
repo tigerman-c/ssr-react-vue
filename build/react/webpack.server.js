@@ -5,10 +5,10 @@ const nodeExternals = require('webpack-node-externals');
 const serverConfig = {
 	target: 'node',
 	mode: 'development',
-	entry: './src/ssrServer.js',
+	entry: '../../src/react/server.js',
 	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		filename: 'react.server.js',
+		path: path.resolve(__dirname, '../../dist/react')
 	},
 	externals: [nodeExternals()],
 	module: {

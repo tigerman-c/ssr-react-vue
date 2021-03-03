@@ -1,3 +1,4 @@
+const { useReducer } = require('react')
 const React =  require('react')
 const {useState,useEffect} = React
 
@@ -6,9 +7,12 @@ module.exports = function() {
     function addCount(){
         setCount(count+1)
     }
+    useEffect(()=>{
+        console.log('mounted')
+    },[])
     return (
-        <div className="application">
-            <div>{count}</div>
+        <div className="news">
+            <p>{count}</p>
             <button onClick={addCount}>add</button>
         </div>
     )
