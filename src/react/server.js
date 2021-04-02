@@ -19,7 +19,7 @@ app.use(express.static('../../public'))
 app.all('/react', function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.header('Content-Type', 'text/html;charset=utf-8')
-    console.log(content)
+    // console.log(content)
     res.send(html)
 })
 
