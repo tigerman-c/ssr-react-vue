@@ -5,7 +5,7 @@ const {useState,useEffect} = React
 module.exports = function() {
     const [count,setCount] = useState(0)
     function addCount(){
-        setCount(count+2)
+        setCount(count+1)
     }
     useEffect(()=>{
         console.log('mounted')

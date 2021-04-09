@@ -14,7 +14,8 @@ const html = `
     </html>
 `
 
-app.use(express.static('../../public'))  
+// app.use(express.static('../../public'))  
+app.use(express.static('public'))  
 
 app.all('/react', function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*')

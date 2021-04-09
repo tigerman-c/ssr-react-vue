@@ -5,7 +5,7 @@ const nodeExternals = require('webpack-node-externals');
 const serverConfig = {
 	target: 'node',
 	mode: 'development',
-	entry: '/src/react/server.js',
+	entry: './src/react/server.js',
 	output: {
 		filename: 'react.server.js',
 		path: path.resolve(__dirname, '../../dist/react')

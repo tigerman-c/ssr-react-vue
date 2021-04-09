@@ -2,7 +2,7 @@ const path = require('path');
 
 const serverConfig = {
 	mode: 'development',
-	entry: '/src/react/client.js',
+	entry: './src/react/client.js',
 	output: {
 		filename: 'react.index.js',
 		path: path.resolve(__dirname, '../../public')
